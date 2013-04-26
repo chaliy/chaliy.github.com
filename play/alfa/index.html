@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ALFA ACE</title>
+<style type="text/css" media="screen">
+    #editor { 
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+</style>
+</head>
+<body>
+
+<div id="editor">namespace class {
+    import Attributes.*
+
+    attribute sbjClass {
+        id = "urn:azm:subject:class"
+        type = string
+        category = subjectCat
+    }
+
+    attribute rscClass {
+        id = "urn:azm:resource:class"
+        type = string
+        category = resourceCat
+    }
+
+    policy testpolicy {
+        apply permitOverrides
+        rule {
+            permit
+            condition stringAtLeastOneMemberOf(sbjClass, rscClass)
+        }
+        rule {
+            deny
+        }
+    }
+}</div>
+    
+<script src="http://rawgithub.com/ajaxorg/ace-builds/master/src-min/ace.js" type="text/javascript" charset="utf-8"></script>
+<script src="http://rawgithub.com/chaliy/ace-alfa/master/mode-alfa.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/monokai");
+    editor.getSession().setMode("ace/mode/alfa");
+</script>
+</body>
+</html>
