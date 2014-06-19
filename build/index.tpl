@@ -44,47 +44,12 @@
 
         <h1>Posts</h1>      
         <dl>
+            {{#items}}
             <dt>
-            <strong><a href="http://chaliy.wordpress.com/2014/06/19/octave-on-windows/">Octave on Windows</a></strong>
+            <strong><a href="{{link}}">{{title}}</a></strong>
             </dt>
-            <dd>For me it is third attempt to complete ML course on Coursera , whish me lack so I have time to eventually complete it. In general I prefer to use Python for my studies, I like IPython, numpy and just Python, but for this course Andrew Ng decided to go with Octave, so I need [&#8230;]<img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=chaliy.wordpress.com&#038;blog=18672505&#038;post=77&#038;subd=chaliy&#038;ref=&#038;feed=1" width="1" height="1" /></dd>
-                        <dt>
-            <strong><a href="http://chaliy.wordpress.com/2014/01/07/r-language-newbie-tricks/">R Language – Newbie tricks</a></strong>
-            </dt>
-            <dd>Disclaimer: I just completed Data Analysis course on Coursera, so this tricks could look very na¿ve. First trick is to use RStudio. Main reason is that RStudio makes it more visible of what are you doing now. Plot something and this plot will be right behind your eyes. Load data and you will see list [&#8230;]<img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=chaliy.wordpress.com&#038;blog=18672505&#038;post=64&#038;subd=chaliy&#038;ref=&#038;feed=1" width="1" height="1" /></dd>
-                        <dt>
-            <strong><a href="http://chaliy.wordpress.com/2013/09/25/my-surface-rt-gen-1/">My Surface RT (Gen 1)</a></strong>
-            </dt>
-            <dd>I own Surface RT. This post is all about my subjective opinions about it. TL;DR; What I like: Accounts. It was planned that it will be used as personal device. It does not. So now we have three account. My wife’s account, she writes some stuff, my account – almost for student work and what [&#8230;]<img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=chaliy.wordpress.com&#038;blog=18672505&#038;post=57&#038;subd=chaliy&#038;ref=&#038;feed=1" width="1" height="1" /></dd>
-                        <dt>
-            <strong><a href="http://chaliy.wordpress.com/2013/09/25/sharepoint-twitter-bootstrap-less-hack/">SharePoint + Twitter Bootstrap = Less Hack</a></strong>
-            </dt>
-            <dd>Developing for SharePoint 2010 is unhealthy. You cannot use last .NET features, you cannot use last JavaScript stuff and at the end you cannot use last CSS goodies. Of course, I want all this stuff. This post is about small hack that will give you Bootstrap styles in your SharePoint pages. What the problem? Well, [&#8230;]<img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=chaliy.wordpress.com&#038;blog=18672505&#038;post=55&#038;subd=chaliy&#038;ref=&#038;feed=1" width="1" height="1" /></dd>
-                        <dt>
-            <strong><a href="http://chaliy.wordpress.com/2013/06/03/apache-thrift-journey-on-net/">Apache Thrift journey on .NET</a></strong>
-            </dt>
-            <dd>I needed fast protocol for cross-process communication. There are many options, and Apache Thrift one of them. So I decided to give it a try. This is quote from project site: The Apache Thrift software framework, for scalable cross-language services development, combines a software stack with a code generation engine to build services that work [&#8230;]<img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=chaliy.wordpress.com&#038;blog=18672505&#038;post=52&#038;subd=chaliy&#038;ref=&#038;feed=1" width="1" height="1" /></dd>
-                        <dt>
-            <strong><a href="http://chaliy.wordpress.com/2013/06/02/psget-news-2-new-modules/">PsGet News #2: new modules</a></strong>
-            </dt>
-            <dd>I LOVE PSGET. There reason is simple, it works even if I do not have time maintain it Anyway we have some new modules I want to highlight. Modules posh-npm&#160; &#8211; Integration of the Node.js to PowerShell console. Adds tab completion and other goodies. PSBabushka &#8211; A configuration management framework built in PowerShell to help [&#8230;]<img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=chaliy.wordpress.com&#038;blog=18672505&#038;post=48&#038;subd=chaliy&#038;ref=&#038;feed=1" width="1" height="1" /></dd>
-                        <dt>
-            <strong><a href="http://chaliy.wordpress.com/2013/05/30/google-reader-replacements/">Google Reader replacements</a></strong>
-            </dt>
-            <dd>Most recent version of the list in this gist. Feedly http://feedly.com/ Requires Google Chrome or Firefox on Desctop Has iPad and Android apps, does not have WindowsRT app Syncs read items with Google Reader Guys does not like Windows The Old Reader http://theoldreader.com/ Works in any browser Looks very fammilar to Google Reader Does not [&#8230;]<img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=chaliy.wordpress.com&#038;blog=18672505&#038;post=45&#038;subd=chaliy&#038;ref=&#038;feed=1" width="1" height="1" /></dd>
-                        <dt>
-            <strong><a href="http://chaliy.wordpress.com/2013/05/07/windows-vms/">Windows VMs</a></strong>
-            </dt>
-            <dd>From time to time you need VM to play and forget. It would be cool to have something like Vagrant, àëå ìàºìî òå, ùî ìàºìî. So here few links when you can get preinstalled virtual machines with Windows. Modern.IE site One of the best sources of virtual machines up to date is Modern.IE site. Technically [&#8230;]<img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=chaliy.wordpress.com&#038;blog=18672505&#038;post=43&#038;subd=chaliy&#038;ref=&#038;feed=1" width="1" height="1" /></dd>
-                        <dt>
-            <strong><a href="http://chaliy.wordpress.com/2013/03/20/fact-you-can-run-multiline-command-in-msbuild-exec-task-in-simple-way/">Fact: You can run multiline command in MsBuild Exec Task in simple way</a></strong>
-            </dt>
-            <dd>This might look obvious, but I spent some time to try some complicated ways (like declaring variable) and some incorrect ways (like declaring Command element) and ended with this..: Eye opener, I can put multiline script just to Command attribute and it even works.<img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=chaliy.wordpress.com&#038;blog=18672505&#038;post=34&#038;subd=chaliy&#038;ref=&#038;feed=1" width="1" height="1" /></dd>
-                        <dt>
-            <strong><a href="http://chaliy.wordpress.com/2013/02/28/introducing-tpl-async-generator/">Introducing TPL Async Generator</a></strong>
-            </dt>
-            <dd>I am playing with Azure last months. I love Azure. Really breath of fresh air last days… But there is small funny issue… Client libraries are async. But async is implement with old IAsyncResult model. Uuuu. Ugly. Let’s fix this. I implemented small T4 template that actually looks for all methods with Begin and generate [&#8230;]<img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=chaliy.wordpress.com&#038;blog=18672505&#038;post=32&#038;subd=chaliy&#038;ref=&#038;feed=1" width="1" height="1" /></dd>
-                        
+            <dd>{{{description}}}</dd>
+            {{/items}}            
         </dl>        
    
 
