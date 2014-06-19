@@ -2,7 +2,7 @@
 <html lang="en" xml:lang="en">
 <head>
     <title>Mike Chaliy's Home Page</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta http-equiv="Content-Type" content="text/html" />
     <meta name="Geography" content="Lviv, Ukraine">
     <meta name="City" content="Lviv">
     <meta name="Country" content="Ukraine">
