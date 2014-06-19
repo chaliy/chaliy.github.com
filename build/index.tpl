@@ -8,8 +8,8 @@
     <meta name="Country" content="Ukraine">
     <meta name="Language" content="English">
     <meta name="Author" content="Mike Chaliy" />
-    <link href="/stylesheets/style.css" media="all" rel="stylesheet" type="text/css" />
-    <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+    <link href="./stylesheets/style.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="./stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
     <!-- OpenID -->
     <link rel="openid.server" href="http://pip.verisignlabs.com/server" />
     <link rel="openid.delegate" href="http://chaliy.pip.verisignlabs.com" />
@@ -23,8 +23,13 @@
     <meta name="verify-v1" content="i1VJiETc/TZVP7bgMH4jwH4uHBDSCBJzjdFWHDeOlZo=" >
 </head>
 <body>
-    
-        <div id="menu">
+            
+        <h1>
+            <p>Mike Chaliy's Site</p>
+            <a class="rss" type="application/atom+xml" title="Mike Chaliy, Blog" href="http://feeds.feedburner.com/chaliy" >My RSS Feed.</a>
+        </h1>        
+
+        <div id="menu2">
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="http://chaliy.wordpress.com">Blog</a></li>
@@ -32,17 +37,12 @@
                 <li><a href="/home/contacts.html">Contacts</a></li>
             </ul>
         </div>
-        
-        <div id="header">
-            <p>Mike Chaliy's Personal Site</p>
-            <a class="rss" type="application/atom+xml" title="Mike Chaliy, Blog" href="http://feeds.feedburner.com/chaliy" >My RSS Feed.</a>    
-        </div>
-            
-    
+
+                
         
     <div id="main">
 
-        <h1>Posts</h1>      
+        <h2>Posts</h2>      
         <dl>
             {{#items}}
             <dt>
@@ -53,7 +53,7 @@
         </dl>        
    
 
-        <h1>Archived old posts</h1>      
+        <h2>Archived old posts</h2>      
         <dl>
             <dt>
             <strong><a href="http://blog.chaliy.name/post/16170896178/app-config">Where do we keep our application configuration settings?</a></strong>

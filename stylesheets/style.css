@@ -2,9 +2,8 @@
 	margin: 0;
 	padding: 0;
 }
-body{
-	background: #fff url(../images/header-background.gif) repeat-x;
-	font-family: Arial, Helvetica, sans-serif;
+body{	
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: .9em;
 	line-height: 1.5em;
 	color: #333;
@@ -14,6 +13,7 @@ body{
 a {
 	text-decoration: none;
 	color: #039;
+	font-family: "Oswald", Helvetica, Arial, sans-serif;
 }
 a:hover
 {
@@ -109,8 +109,85 @@ img.right{
 code {
     overflow: auto
 }
-#menu
+
+#menu2 {
+	margin-top: 3px;
+	height: 40px;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	text-transform: uppercase;
+}
+#menu2 ul {
+	margin-top: 0px;
+	list-style-type: none;
+	padding-top: 8px;
+}
+#menu2 ul li {
+	display: block;
+	float: left;
+}
+#menu2 ul li a {
+	color: black;
+	padding: 0 20px 0 0;
+	font-weight: 100;
+	font-size: 14px;
+}
+#menu2 ul li a:hover {
+	color: #111;
+}
+
+
+h1 {
+	font-size: 40px;
+	text-transform: uppercase;
+	width: 500px;
+}
+h1 .rss {
+	background-image: url("/images/rss.png");
+	text-indent: -20000px;
+	display: block;
+	width: 48px;
+	height: 48px;
+	position: relative;
+	top: -40px;
+	left: 700px;
+}
+h2 {	
+	text-transform: uppercase;
+	color: #666;
+}
+dt {
+	text-transform: uppercase;
+}
+
+#main {
+    padding-top: 20px;
+}
+#footer
 {
+	margin-top: 20px;
+	border-top: 1px solid #AEAEAE;
+	background: #ececec;
+	padding: 10px 0;
+	text-align: center;
+}
+.clear {
+	clear:both;
+}
+.unimportanant-info {
+	color: silver;
+	font-size: .8em;
+}
+.importanant-info {
+	background-color: #f8f8f8;
+	border: #ddd 1px solid;
+	color: black;
+	padding: 20px;
+}
+
+/* Legacy */
+#menu
+{	
 	height: 40px;
 }
 #menu ul
@@ -144,7 +221,8 @@ code {
 	color: #fff;
 	font-size: 20px;
 	margin-bottom: 20px;
-	width: 500px;	
+	width: 500px;
+	text-transform: uppercase;
 }
 #header .rss {
 	background-image: url("/images/rss.png");
@@ -161,17 +239,6 @@ code {
 }
 #header {
 	height: 50px;
-}
-#main {
-    padding-top: 20px;
-}
-#footer
-{
-	margin-top: 20px;
-	border-top: 1px solid #AEAEAE;
-	background: #ececec;
-	padding: 10px 0;
-	text-align: center;
 }
 .entry
 {
@@ -233,17 +300,4 @@ code {
 	border: #ddd 1px solid;
 	display: block;
 	padding: 10px;
-}
-.clear {
-	clear:both;
-}
-.unimportanant-info {
-	color: silver;
-	font-size: .8em;
-}
-.importanant-info {
-	background-color: #f8f8f8;
-	border: #ddd 1px solid;
-	color: black;
-	padding: 20px;
 }
