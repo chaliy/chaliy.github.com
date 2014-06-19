@@ -34,7 +34,7 @@
 		
 	<div id="main">
                 
-		<h1>Card</h1>
+		<h2>Card</h2>
 <div id="hcard-Mike-Chaliy" class="vcard">
  <img src="/images/avatar320.jpg" class="right" alt="Mike Chaliy, with daughter" />
  <a class="url fn" href="http://chaliy.name">Mike Chaliy</a><br />
@@ -44,13 +44,13 @@
   <div class="street-address">Zamarstinivska 240/30</div>
   <span class="locality">Lviv</span>,
   <span class="region">Lviv</span>,
-  <span class="postal-code">79000</span>
+  <span class="postal-code">79068</span>
   <span class="country-name">Ukraine</span>
  </div>  
  <a href="http://twitter.com/chaliy" title="My random thoughts on Twitter" class="twitter">Follow me on Twitter</a><br />
  <a href="http://www.linkedin.com/in/chaliy" title="My profile on LinkedIn" class="linkedin">My profile on LinkedIn</a><br />
 </div>
-<h1>Links</h1>
+<h2>Links</h2>
 <ul>
 	<li><a href="http://github.com/chaliy">Fork me on GitHub</a></li>
 	<li><a href="http://github.com/chaliy/chaliy_personal_site/">Fork this site on GitHub</a></li>
@@ -60,12 +60,8 @@
 	</div>
 		
     	<div id="footer">        
-       	Mike Chaliy &copy; Copyright 2009 
+       	Mike Chaliy &copy; Copyright 2014
 		&nbsp;|&nbsp;
-		<a href="http://www.developers.org.ua" >
-			<img width="80" height="15" border="0" alt="???????? ??????? Developers.org.ua" src="http://www.developers.org.ua/static/images/planet/80x15_green.gif" />
-		</a>
-		&nbsp;|&nbsp;			
 		<a rel="license" href="http://creativecommons.org/licenses/by/3.0/">
 			<img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a><br />
 			This <span xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://purl.org/dc/dcmitype/Text" rel="dc:type">work</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://chaliy.name" property="cc:attributionName" rel="cc:attributionURL">Mike Chaliy</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.
