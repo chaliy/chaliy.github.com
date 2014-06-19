@@ -2,6 +2,7 @@ import pystache
 import requests
 from bs4 import BeautifulSoup
 from os import path
+import codecs
 
 here = path.dirname(__file__)
 
@@ -31,5 +32,5 @@ feed = read_feed()
 items = parse_feed(feed)
 
 result = gen_index(items)
-with open(path.join(here, '../index.html'), 'w') as f:
+with codecs.open(path.join(here, '../index.html'), 'w', 'utf-8-sig') as f:
     f.write(result)
