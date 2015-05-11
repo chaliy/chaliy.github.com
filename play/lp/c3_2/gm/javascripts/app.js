@@ -420,10 +420,10 @@ var L4 = React.createClass({
   initCanvas: function() {
     if (this.refs.canvas) {
       var canvas = this.refs.canvas.getDOMNode();
-      var gl = this.gl = canvas.getContext("webgl");
-      gl.viewportWidth = canvas.width;
-      gl.viewportHeight = canvas.height;
-      gl.viewport(0, 0, gl.viewportWidth, gl.viewportHeight);
+      var gl = this.gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+      this.width = canvas.width;
+      this.height = canvas.height;
+      gl.viewport(0, 0, this.width, this.height);
       var mvMatrix = this.mvMatrix = mat4.create();
       var pMatrix = this.pMatrix = mat4.create();
       var fragmentShader = compileShader(gl, gl.FRAGMENT_SHADER, "\n        precision mediump float;\n\n        varying vec2 vTextureCoord;\n\n        uniform sampler2D uSampler;\n\n        void main(void) {\n            gl_FragColor = texture2D(uSampler, vec2(vTextureCoord.s, vTextureCoord.t));\n        }\n      ");
