@@ -374,9 +374,10 @@ function prepareColorTexture(gl, color) {
   return texture;
 }
 function buildCorneredFigure(gl) {
-  var centerZ = 0.1;
-  var arrisZ = 0.1;
-  var lowerZ = 0.1;
+  var zd = rand(0.1, 0.5);
+  var centerZ = zd;
+  var arrisZ = zd;
+  var lowerZ = zd;
   var num = rand(1, 4) * 4;
   var x = randf(-1.0, 5.0);
   var y = randf(-1.0, 5.0);
@@ -411,7 +412,10 @@ function buildCorneredFigure(gl) {
 var L4 = React.createClass({
   displayName: "L4",
   getInitialState: function() {
-    return {angle: 10};
+    return {
+      angle: 45,
+      rotation: 0
+    };
   },
   initCanvas: function() {
     if (this.refs.canvas) {
@@ -495,10 +499,16 @@ var L4 = React.createClass({
       {
         mat4.identity(this.mvMatrix);
         mat4.translate(this.mvMatrix, this.mvMatrix, [0.0, 0.0, -7.0]);
+        mat4.translate(this.mvMatrix, this.mvMatrix, [0.0, 0.0, 0.001]);
+        var rotation = this.state.rotation;
+        mat4.rotate(this.mvMatrix, this.mvMatrix, rad(rotation), [1, 0, 0]);
+        mat4.rotate(this.mvMatrix, this.mvMatrix, rad(rotation), [0, 1, 0]);
+        mat4.rotate(this.mvMatrix, this.mvMatrix, rad(rotation), [0, 0, 1]);
         var num = 16;
         mat4.rotate(this.mvMatrix, this.mvMatrix, rad(this.state.angle), [0, 0, 1]);
         for (var i = 0; i < num; i++) {
           mat4.rotate(this.mvMatrix, this.mvMatrix, rad(360 / num), [0, 0, 1]);
+          mat4.translate(this.mvMatrix, this.mvMatrix, [0.0, 0.0, 0.001]);
           this._pushMvMatrix();
           if (i % 2 === 0) {
             mat4.scale(this.mvMatrix, this.mvMatrix, [-1.0, 1.0, 1.0]);
@@ -548,12 +558,25 @@ var L4 = React.createClass({
     })), React.createElement("div", {className: "col-md-4"}, React.createElement("form", null, React.createElement(Input, {
       name: "angle",
       type: "range",
+      step: "any",
+      min: "0",
+      max: "90",
       label: "Кут",
+      onChange: this._handleChange
+    }), React.createElement(Input, {
+      name: "rotation",
+      type: "range",
+      step: "any",
+      min: "-90",
+      max: "90",
+      label: "Обертання",
       onChange: this._handleChange
     })))));
   },
   _handleChange: function(e) {
-    this.setState({angle: (45 * 100) / Math.max(5, e.target.value)});
+    var patch = {};
+    patch[e.target.name] = e.target.value;
+    this.setState(patch);
   }
 });
 exports.L4 = L4;
